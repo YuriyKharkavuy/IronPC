@@ -22,7 +22,7 @@ header{
     padding: 5px;
     box-sizing: border-box;
 }
-section, header{
+section, header, footer{
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -47,4 +47,58 @@ section, header{
 width: 200px;
 right: 30px;
 top: 50px;
+}
+.about{
+  display: inline-block;
+background: white;
+font-size: 22px;
+border: 5px solid #0096d2;
+color: #1151ed;
+padding: 20px;
+}
+.better{
+  padding: 10px;
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.8);
+  display: flex;
+justify-content: space-around;
+}
+.better ul{
+  font-size: 20px;
+color: #1151ed;
+
+padding: 50px;
+margin: 0;
+}
+footer{
+  background-image: url(../img/down.png);
+  height: 200px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+background-size: cover;
+
+}
+footer p{
+  color: white;
+  margin: 0 auto;
+  bottom: 10px;
+    left: 50%;
+  position: absolute;
+}
+
+#tel, #loc{
+  position: absolute;
+  font-size: 20px;
+  right: 10px;
+  top: 10px;
+  color: white;
+}
+#tel a{
+  color: white;
+  text-decoration: none;
+}
+#loc{
+  top: 40px;
 }
