@@ -1,4 +1,50 @@
 html,body{
   margin: 0;
   padding: 0;
+      font-family: monospace;
+}
+body{
+  background-image: url(../img/fon.jpg);
+
+}
+ul.main{
+  list-style: none;
+margin: 0;
+padding: 0;
+justify-content: space-around;
+display: flex;
+
+width: 100%;
+}
+header{
+  position: absolute;
+  width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+section, header{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.sec1{
+  background: white;
+}
+.sec1 img{
+  width: 100%;
+}
+.main  a{
+  font-size: 24px;
+  text-decoration: none;
+  color:#4379ed;
+  /* transition: all .5s ease; */
+
+}
+.main a:hover{
+  color:red;
+}
+#zakaz{
+  position: absolute;
+width: 200px;
+right: 30px;
+top: 50px;
 }
