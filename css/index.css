@@ -13,7 +13,6 @@ margin: 0;
 padding: 0;
 justify-content: space-around;
 display: flex;
-
 width: 100%;
 }
 header{
@@ -26,18 +25,16 @@ section, header, footer{
   max-width: 1000px;
   margin: 0 auto;
 }
-.sec1{
+.logo{
   background: white;
 }
-.sec1 img{
+.logo img{
   width: 100%;
 }
 .main  a{
   font-size: 24px;
   text-decoration: none;
   color:#4379ed;
-  /* transition: all .5s ease; */
-
 }
 .main a:hover{
   color:red;
@@ -101,4 +98,7 @@ footer p{
 }
 #loc{
   top: 40px;
+}
+@media (min-width: 600px){
+    
 }
