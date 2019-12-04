@@ -1,3 +1,4 @@
+@media (min-width: 600px){
 html,body{
   margin: 0;
   padding: 0;
@@ -15,17 +16,22 @@ justify-content: space-around;
 display: flex;
 width: 100%;
 }
+
 header{
   position: absolute;
   width: 100%;
     padding: 5px;
     box-sizing: border-box;
 }
+header .main{
+    display: flex;
+    align-items: center;
+}
 section, header, footer{
   max-width: 1000px;
   margin: 0 auto;
 }
-.logo{
+.logo #all{
   background: white;
 }
 .logo img{
@@ -35,6 +41,7 @@ section, header, footer{
   font-size: 24px;
   text-decoration: none;
   color:#4379ed;
+  padding: 5px;
 }
 .main a:hover{
   color:red;
@@ -67,38 +74,24 @@ color: #1151ed;
 padding: 50px;
 margin: 0;
 }
-footer{
-  background-image: url(../img/down.png);
-  height: 200px;
-  display: flex;
-  position: relative;
-  width: 100%;
-  background-repeat: no-repeat;
-background-size: cover;
 
-}
 footer p{
   color: white;
   margin: 0 auto;
   bottom: 10px;
-    left: 50%;
-  position: absolute;
+  justify-content: space-around;
+   display: flex;
 }
-
+#down{
+    width: 100%;
+}
 #tel, #loc{
-  position: absolute;
   font-size: 20px;
-  right: 10px;
-  top: 10px;
   color: white;
+  justify-content: space-around;
+display: flex;
 }
 #tel a{
   color: white;
   text-decoration: none;
-}
-#loc{
-  top: 40px;
-}
-@media (min-width: 600px){
-    
 }
