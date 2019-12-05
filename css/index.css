@@ -82,8 +82,8 @@ footer p{
   justify-content: space-around;
    display: flex;
 }
-#down{
-    width: 100%;
+footer{
+    background-image: url(../img/down.png);
 }
 #tel, #loc{
   font-size: 20px;
