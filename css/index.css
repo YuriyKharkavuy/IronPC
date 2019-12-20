@@ -1,4 +1,3 @@
-@media (min-width: 600px){
 html,body{
   margin: 0;
   padding: 0;
@@ -35,7 +34,8 @@ section, header, footer{
   background: white;
 }
 .logo img{
-  width: 100%;
+      width: 100%;
+    height: 100%;
 }
 .main  a{
   font-size: 24px;
@@ -74,7 +74,28 @@ color: #1151ed;
 padding: 50px;
 margin: 0;
 }
-
+.product-list{
+       background: rgba(255,255,255,0.8);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.product-card{
+        width: 30%;
+    flex: none;
+    background: #1a3c5f;
+    margin: 10px;
+        align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.product-card p {
+        color: white;
+    text-align: center;
+}
 footer p{
   color: white;
   margin: 0 auto;
@@ -95,3 +116,78 @@ display: flex;
   color: white;
   text-decoration: none;
 }
+
+
+
+ .swiper-container {
+      width: 100%;
+      height: 100%;
+          height: 400px;
+    margin-top: -5px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+   header  .mobile{
+        display: none;
+    }
+    @media only screen and (max-width: 600px) {
+       header  .main{
+            display: none;
+        }
+       header  .mobile{
+           display: block;
+    width: 40px;
+    transition: all .5s ease;
+    position: absolute;
+    z-index: 2;
+    }
+      header  .mobile a{
+       font-size: 20px;
+    text-decoration: none;
+    color: #444b54;
+    padding: 5px;
+    }
+       
+    .button_menu{
+            background: url(../img/icons8-menu.svg);
+    width: 40px;
+    height: 40px;
+    flex: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    }
+    .main  li{
+    opacity: 0;
+    height: 0px;
+    transition: all .4s ease;
+    }
+    .main:hover  li{
+        transition: all .4s ease;
+            opacity: 1;
+            height:25px;
+            background: white;
+    }
+     .main:hover{
+         width: 150px;
+     }
+     .zakaz_m{
+         top: -50px;
+     }
+    }

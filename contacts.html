@@ -7,21 +7,41 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="icon" href="img/logo.png" type="image/x-icon">
 	<title>Contacts</title>
+    <link rel="stylesheet" href="css/index.css">
 	<style>
 		body {
-			background-image: url("img/contacts.jpg");
-			background-size: 100%
+			    background-image: url(img/contacts.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
 		}
-
+li{
+    list-style:none;
+}
+section, header, footer {
+    max-width: 10000px;
+    margin: 0 auto;
+}
+header ul{
+    background:transparent;
+}
 		.content {
-			display: flex;
-			justify-content: space-around;
+			      display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    height: 100%;
+    align-items: center;
 		}
 
 		h2 {
 			word-spacing: 100px;
 		}
-
+        .zakaz_m{
+z-index: 123;
+    position: relative;
+        }
+     
+    
 		ul {
 			background: #ffffff;
 			padding: 5px;
@@ -33,18 +53,23 @@
 
 <body>
 	<header>
-		<nav>
-			<h2 align="center">
-				<a href="index.html">Головна</a>
-				<a href="services.html">Послуги</a>
-				<a href="price-list.html">Прейскурант</a>
-				<a href="contacts.html">Контакти</a>
-			</h2>
-			<a href="contacts.html">
-				<img src="img/zakaz-master.png" alt="zakaz-master" >
-            </a>
-		</nav>
-	</header>
+			<nav>
+				<ul class="main">
+					<li><a href="index.html"> Головна</a> </li>
+					<li><a href=""> Послуги</a></li>
+					<li><a href=""> Прейскурант</a></li>
+					<li><a href="contacts.html"> Контакти</a></li>
+				</ul>
+                <ul class="main mobile">
+                    <a href="" class=button_menu></a>
+					<li><a href="index.html"> Головна</a> </li>
+					<li><a href=""> Послуги</a></li>
+					<li><a href=""> Прейскурант</a></li>
+					<li><a href="contacts.html"> Контакти</a></li>
+				</ul>
+				<a href="tel:0631753768" id="zakaz"><img class="zakaz_m" src="img/zakaz-master.png" alt="zakazmaster"></a>
+			</nav>
+		</header>
 	<div class="content">
 		<ul>
 			<h3>
